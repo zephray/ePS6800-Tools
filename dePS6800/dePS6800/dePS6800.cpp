@@ -26,7 +26,7 @@ const Instruction instructionSet[INSTR_COUNT + 1] = { //Include one unknown inst
 	{ 0xFFFF, 0x0001, 1, 0, 0, 0, 0, "WDTC" },
 	{ 0xFFFF, 0x0002, 1, 0, 0, 0, 0, "SLEP" },
 	{ 0xFF00, 0x2700, 1, 1, 0x00FF, 0, 0, "RPT r%02xh" },
-	{ 0xFF00, 0x8300, 1, 1, 0x00FF, 0, 0, "BANK #%02xh" },
+	{ 0xFF00, 0x4300, 1, 1, 0x00FF, 0, 0, "BANK #%02xh" },
 	{ 0xF000, 0x3000, 1, 1, 0x0FFF, 0, 0, "S0CALL %03xh" },
 	{ 0xE000, 0xE000, 1, 1, 0x1FFF, 0, 0, "SCALL %04xh" },
 	{ 0xFFFE, 0x0030, 2, 1, 0x0001FFFF, 0, 0, "LCALL %05xh" },
